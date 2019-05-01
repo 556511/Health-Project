@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+
+
+/**************************************************Navigation Bar***************************************************/
+
+.navBar {
+    margin:0;
+    padding: 0;
+    height: 15vh;
+	width: 100%;
+	min-height:70px;
+    background-color: #2FB776;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+	
+
+}
+.Name {
+    padding-left: 30px;
+    font-size: 26px;
+    flex-wrap: nowrap;
+}
+
+
+.Navigation {
+    padding-top: 2vh;
+    flex-wrap: nowrap;
+
+}
+
+.Navigation li {
+    list-style-type: none;
+    display: inline-block;
+    color: rgba(28, 27, 27, 0.90)
+    
+    
+}
+
+.Home, .About, .Contact, .Work {
+    width: 70%;
+    padding-right: 15px;
+
+}
+
+/************************************************Display Pictures*****************************************************/
+.contentParent {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 0.2em;
+    grid-area: 
+    "h h h h h h h h h h h h h"
+    "m c c c c c c c c c c c c"
+    "f f f f f f f f f f f f f";
+}
+
+.contentParent h2 {
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+   
+}
+
+.contentBox-1 {
+
+    background-color: #3CAEA3;
+    grid-column: 1 / -1
+}
+
+.contentBox-2 {
+    
+    background-color: #f6d55c;
+    grid-column: 2 / 1
+
+}
+
+.contentBox-3 {
+
+    background-color: #ed553b;
+    grid-column: 2 / -1
+
+}
+
